@@ -32,11 +32,14 @@ Contexts is a full-stack task management application built with React, TypeScrip
 
 ### Database Schema
 - **Users Table**: Basic user authentication (id, username, password)
-- **Tasks Table**: Task management (id, name, description, comments, context)
+- **Contexts Table**: Context categories (id, name, color) for organizing tasks
+- **Tasks Table**: Task management (id, name, description, comments, contextId)
 - **Validation**: Zod schemas with business rules (name max 50 chars, description max 200 chars)
 
 ### API Endpoints
-- `GET /api/tasks` - Retrieve all tasks
+- `GET /api/contexts` - Retrieve all contexts
+- `POST /api/contexts` - Create new context (or return existing if name exists)
+- `GET /api/tasks` - Retrieve all tasks with context information
 - `GET /api/tasks/:id` - Retrieve single task
 - `POST /api/tasks` - Create new task
 - `PUT /api/tasks/:id` - Update existing task
@@ -48,6 +51,9 @@ Contexts is a full-stack task management application built with React, TypeScrip
 - **UI Components**: Comprehensive set of shadcn/ui components for consistent design
 
 ### Key Features
+- **Context Management**: Create and organize tasks by contexts with color-coded categories
+- **Intelligent Context Selection**: Dropdown with existing contexts plus ability to create new ones
+- **Board Layout**: Visual card-based display grouping tasks by context
 - **Keyboard Navigation**: Global Enter key to open task creation modal
 - **Form Validation**: Client and server-side validation with error handling
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
@@ -101,7 +107,12 @@ Contexts is a full-stack task management application built with React, TypeScrip
 
 ```
 Changelog:
-- July 02, 2025. Initial setup
+- July 02, 2025: Enhanced context management system
+  - Added contexts table with color-coded categories  
+  - Implemented context dropdown with custom input for creating new contexts
+  - Created board layout showing tasks organized by context
+  - Updated task schema to use contextId instead of plain text
+- July 02, 2025: Initial setup
 ```
 
 ## User Preferences

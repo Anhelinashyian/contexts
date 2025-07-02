@@ -88,4 +88,18 @@
   .modal-input {
     @apply bg-white bg-opacity-80 focus:ring-2 focus:ring-blue-500 focus:border-transparent;
   }
+
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
 }

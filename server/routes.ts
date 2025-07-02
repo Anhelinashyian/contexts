@@ -1,10 +1,43 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertTaskSchema } from "@shared/schema";
+import { insertTaskSchema, insertContextSchema } from "@shared/schema";
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Get all contexts
+  app.get("/api/contexts", async (req, res) => {
+    try {
+      const contexts = await storage.getContexts();
+      res.json(contexts);
+    } catch (error) {
+      res.status(500).json({ message: "Failed to fetch contexts" });
+    }
+  });
+
+  // Create new context
+  app.post("/api/contexts", async (req, res) => {
+    try {
+      // Check if context already exists
+      const existingContext = await storage.getContextByName(req.body.name);
+      if (existingContext) {
+        return res.json(existingContext);
+      }
+      
+      const validatedData = insertContextSchema.parse(req.body);
+      const context = await storage.createContext(validatedData);
+      res.status(201).json(context);
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return res.status(400).json({ 
+          message: "Validation error", 
+          errors: error.errors 
+        });
+      }
+      res.status(500).json({ message: "Failed to create context" });
+    }
+  });
+
   // Get all tasks
   app.get("/api/tasks", async (req, res) => {
     try {
