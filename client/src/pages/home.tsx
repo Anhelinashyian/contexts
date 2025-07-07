@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { TaskModal } from "@/components/task-modal";
-import type { TaskWithContext, Context } from "@shared/schema";
+import { TaskModal } from "../components/task-modal";
+import type { TaskWithContext, Context } from "shared/schema.ts";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,7 +14,6 @@ export default function Home() {
     queryKey: ["/api/contexts"],
   });
 
-  // Group tasks by context
   const tasksByContext = tasks.reduce((acc, task) => {
     const contextId = task.contextId || 'no-context';
     if (!acc[contextId]) {

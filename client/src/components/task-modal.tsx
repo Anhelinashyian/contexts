@@ -93,8 +93,7 @@ export function TaskModal({ isOpen, onClose }: TaskModalProps) {
 
   const onSubmit = async (data: InsertTask) => {
     let contextId = data.contextId;
-    
-    // If custom context is being created
+
     if (isCustomContext && customContextName.trim()) {
       try {
         // Generate a random color for new context

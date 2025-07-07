@@ -1,14 +1,22 @@
 export { };
 module.exports = {
+  preset: "ts-jest",
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/**/*.d.ts',
+  collectCoverageFrom: ['client/src/**/*.{ts,tsx}', '!src/**/*.d.ts',
     '!**/vendor/**'],
   coverageDirectory: 'coverage',
   testEnvironment: 'jsdom',
   transform: {
     ".(ts|tsx)": "ts-jest"
   },
-
+  "coverageThreshold": {
+    "global": {
+      "branches": 70,
+      "functions": 70,
+      "lines": 70,
+      "statements": 70
+    }
+  },
   coveragePathIgnorePatterns: [
     "/node_modules/",
     "/coverage",
