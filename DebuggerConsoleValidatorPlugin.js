@@ -8,9 +8,8 @@ class DebuggerConsoleValidatorPlugin {
                 /\bdebugger\b/,
                 /\bconsole\.log\s*\(/,
             ],
-            include: /\.js$/,
+            include: /\.(js|jsx|ts|tsx)$/,
             failOnError: true,
-            onlyInDev: true,
             ...options,
         };
     }
@@ -25,9 +24,6 @@ class DebuggerConsoleValidatorPlugin {
                     stage: Compilation.PROCESS_ASSETS_STAGE_SUMMARIZE,
                 },
                 (assets) => {
-                    // Skip if onlyInDev and not in development mode
-
-
                     const problems = [];
 
                     for (const [filename, asset] of Object.entries(assets)) {
@@ -36,7 +32,7 @@ class DebuggerConsoleValidatorPlugin {
                         const source = asset.source().toString();
                         const lines = source.split('\n');
 
-                        lines.forEach((line, lineIndex) => {
+                        lines.forEach((line) => {
                             this.options.forbidden.forEach((pattern) => {
                                 const match = line.match(pattern);
                                 if (match) {
@@ -49,7 +45,7 @@ class DebuggerConsoleValidatorPlugin {
                     }
 
                     if (problems.length > 0) {
-                        console.error('\n❌ [DebuggerConsoleValidatorPlugin] Forbidden statements found:\n');
+                        console.error('\n [DebuggerConsoleValidatorPlugin] Forbidden statements found:\n');
 
                         problems.forEach((p) => {
                             console.error(
