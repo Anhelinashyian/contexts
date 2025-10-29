@@ -3,6 +3,7 @@ import {fileURLToPath} from "url";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
+import DebuggerConsoleValidatorPlugin from "./DebuggerConsoleValidatorPlugin.js";
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -93,6 +94,13 @@ export default {
         ],
     },
     plugins: [
+        new DebuggerConsoleValidatorPlugin({
+            forbidden: [
+                /\bdebugger\b/,
+                /\bconsole\.log\s*\(/
+            ],
+            failOnError: true
+        }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "client/index.html"),
             inject: "body",

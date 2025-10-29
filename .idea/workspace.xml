@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5b1a3991-b3cf-4bda-937a-255e37aa9a84" name="Changes" comment="fixed webpack config">
+      <change afterPath="$PROJECT_DIR$/DebuggerConsoleValidatorPlugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/task-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/task-modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2zVQni0Y4xahPSJ8L3dHDer6o7E" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Jest.Home.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.TaskModal.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.toast reducer.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.useIsMobile.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/anmarty/WebstormProjects/ui_kit&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;C:/Users/anmarty/WebstormProjects/contexts/node_modules/jest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;npm.test-coverage.executor&quot;: &quot;Run&quot;,
+    &quot;npm.test.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\anmarty\\WebstormProjects\\contexts\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="npm.build">
+    <configuration name="Home" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/client/src/pages/home.test.tsx" />
+      <test-names>
+        <test-name value="Home" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test-coverage" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test-coverage" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.test-coverage" />
+        <item itemvalue="Jest.Home" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.19416.2" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b1a3991-b3cf-4bda-937a-255e37aa9a84" name="Changes" comment="" />
+      <created>1751813928641</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751813928641</updated>
+      <workItem from="1751813929731" duration="709000" />
+      <workItem from="1751814665928" duration="9179000" />
+      <workItem from="1751898314003" duration="2256000" />
+      <workItem from="1751901322616" duration="11879000" />
+      <workItem from="1752152680471" duration="35000" />
+      <workItem from="1752740174687" duration="1731000" />
+      <workItem from="1753095585806" duration="596000" />
+      <workItem from="1753357458987" duration="933000" />
+      <workItem from="1753709736772" duration="3914000" />
+      <workItem from="1753795697638" duration="2715000" />
+      <workItem from="1753813314810" duration="8853000" />
+      <workItem from="1754304596314" duration="3049000" />
+      <workItem from="1754317296902" duration="40000" />
+      <workItem from="1755774627592" duration="2550000" />
+      <workItem from="1756281928639" duration="11000" />
+      <workItem from="1757687942927" duration="584000" />
+      <workItem from="1757933972351" duration="585000" />
+      <workItem from="1758553022870" duration="583000" />
+      <workItem from="1758639698444" duration="1593000" />
+      <workItem from="1758641361544" duration="2706000" />
+      <workItem from="1759142015549" duration="301000" />
+      <workItem from="1759491879922" duration="14901000" />
+      <workItem from="1761751322641" duration="3637000" />
+    </task>
+    <task id="LOCAL-00001" summary="added jest config">
+      <option name="closed" value="true" />
+      <created>1751827401865</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751827401865</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added unit tests">
+      <option name="closed" value="true" />
+      <created>1751898610226</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751898610226</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updated config">
+      <option name="closed" value="true" />
+      <created>1751971930572</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751971930572</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added certificate to support https">
+      <option name="closed" value="true" />
+      <created>1753801771087</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1753801771087</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added webpack config">
+      <option name="closed" value="true" />
+      <created>1759501509875</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759501509875</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed webpack config">
+      <option name="closed" value="true" />
+      <created>1761751405813</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1761751405813</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added jest config" />
+    <MESSAGE value="added unit tests" />
+    <MESSAGE value="updated config" />
+    <MESSAGE value="added certificate to support https" />
+    <MESSAGE value="added webpack config" />
+    <MESSAGE value="fixed webpack config" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed webpack config" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/index.ts</url>
+          <line>61</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
