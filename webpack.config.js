@@ -24,7 +24,7 @@ export default {
     output: {
         path: path.resolve(__dirname, "dist/public"),
         filename: process.env.NODE_ENV === "production" ? "js/[name].[contenthash].js" : "js/[name].js",
-        assetModuleFilename: "assets/[hash][ext][query]", // hashed assets
+        assetModuleFilename: "assets/[hash][ext][query]",
         clean: true,
         publicPath: "/",
     },
@@ -34,7 +34,7 @@ export default {
             "@shared": path.resolve(__dirname, "shared"),
             "@assets": path.resolve(__dirname, "attached_assets"),
         },
-        extensions: [".js", ".jsx", ".json", ".ts", ".tsx"], // resolve imports without extensions
+        extensions: [".js", ".jsx", ".json", ".ts", ".tsx"]
     },
     module: {
         rules: [
@@ -69,7 +69,8 @@ export default {
                 use: [
                     isProd ? MiniCssExtractPlugin.loader : "style-loader",
                     "css-loader",
-                    "postcss-loader"],
+                    "postcss-loader"
+                ],
             },
             {
                 test: /\.(png|jpe?g|gif|webp|ico|bmp)$/i,
